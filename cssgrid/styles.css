@@ -10,18 +10,15 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
-    width: 300px;
 }
 
 .grid-item {
-    background: #4CAF50;
+    background: #FF5722;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    font-size: 1.5rem;
-    border: 2px solid #2E7D32;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #E64A19;
 }
