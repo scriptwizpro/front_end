@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Webpage">
+    <meta name="author" content="Your Name">
+    <title>Flexbox Product Cards</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 40px);
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">Product 1</div>
+        <div class="card">Product 2</div>
+        <div class="card">Product 3</div>
+        <div class="card">Product 4</div>
+        <div class="card">Product 5</div>
+        <div class="card">Product 6</div>
+    </div>
+</body>
+</html>
