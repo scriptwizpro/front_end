@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Click Counter</title>
+    </head>
+    <body>
+        <button id="countButton">Click Me!</button>
+        <p>You clicked the button <span id="clickCount">0</span> times.</p>
+
+        <script>
+            const button = document.getElementById('countButton');
+            const Counter = document.getElementById('clickCount');
+            let count = 0;
+
+            button.addEventListener('click', () => {
+                count++;
+                Counter.textContent = count;
+            });
+        </script>
+    </body>
+</html>
