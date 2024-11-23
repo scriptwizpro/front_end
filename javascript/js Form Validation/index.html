@@ -15,6 +15,16 @@
         <script>
             const form = document.getElementById('userForm');
             const error = document.getElementById('error');
+
+            form.addEventListener('submit', (event) => {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+
+                if (!name || !email) {
+                    event.preventDefault();
+                    error.textContent = 'Please fill out all fields.';
+                }
+            });
         </script>
     </body>
 </html>
