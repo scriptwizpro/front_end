@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+     <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Simple Website</h1>
+        <p>This is a practice project using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/image1.jpg" alt="Image 1" class="gallery-item" />
+            <img src="images/image2.jpg" alt="Image 2" class="gallery-item" />
+            <img src="images/image3.jpg" alt="Image 3" class="gallery-item" />
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
