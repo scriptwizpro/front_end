@@ -7,3 +7,24 @@ header {
     text-align: center;
     padding: 20px;
 }
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: #3498db;
+
+                &:hover {
+                    color: #e74c3c;
+                }
+            }
+        }
+    }
+}
