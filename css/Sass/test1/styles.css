@@ -19,4 +19,30 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #e74c3c;
+}
+
+button.primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button.primary:hover {
+  opacity: 0.8;
+}
+
+button.secondary {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button.secondary:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=styles.css.map */

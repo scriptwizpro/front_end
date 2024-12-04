@@ -1,5 +1,6 @@
 $primary-color: #3498db;
 $text-color: #2c3e50;
+$bg-color: #345ecc;
 
 header {
     background-color: $primary-color;
@@ -27,4 +28,25 @@ nav {
             }
         }
     }
+}
+
+@mixin button-style ($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+button.primary {
+    @include button-style(#3498db, white);
+}
+
+button.secondary {
+    @include button-style(#2ecc71, white);
 }
