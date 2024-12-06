@@ -1,0 +1,17 @@
+.alert {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &.success {
+        @extend .alert;
+        background-color: #2ecc71;
+        color: white;
+    }
+
+    &.error {
+        @extend .alert;
+        background-color: #e74c3c;
+        color: white;
+    }
+}

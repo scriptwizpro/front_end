@@ -1,0 +1,13 @@
+.alert, .alert.error, .alert.success {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.alert.success {
+  background-color: #2ecc71;
+  color: white;
+}
+.alert.error {
+  background-color: #e74c3c;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
