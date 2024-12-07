@@ -1,0 +1,13 @@
+$base-color: #3498db;
+
+.card {
+    background-color: $base-color;
+    color: lighten($base-color, 40%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: darken($base-color, 20%);
+    }
+}
