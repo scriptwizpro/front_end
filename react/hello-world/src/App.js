@@ -1,16 +1,14 @@
-import {useState} from 'react';
-
 function App() {
-  const [text, setText] = useState('Click the button!');
-
-  const handleClick = () => {
-    setText('You clicked the button!');
-  };
+const fruits = ['Apple', 'Banana', 'Orange', 'Grapes'];
 
   return (
     <div className="App">
-      <p>{text}</p>
-      <button onClick={handleClick}>Click me</button>
+      <h1>Fruit List</h1>
+      <ul>
+        {fruits.map((fruit, index) => (
+          <li key={index}>{fruit}</li>
+        ))}
+      </ul>
     </div>
   );
 }
