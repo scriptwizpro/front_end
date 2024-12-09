@@ -1,7 +1,16 @@
+import {useState} from 'react';
+
 function App() {
+  const [text, setText] = useState('Click the button!');
+
+  const handleClick = () => {
+    setText('You clicked the button!');
+  };
+
   return (
     <div className="App">
-      <h1>Hello, world!</h1>
+      <p>{text}</p>
+      <button onClick={handleClick}>Click me</button>
     </div>
   );
 }
