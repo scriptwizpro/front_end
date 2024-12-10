@@ -1,18 +1,12 @@
-import { useState } from 'react';
+import Greeting from "./Greeting";
 
 function App() {
-  const [isLogedIn, setIsLogedIn] = useState(false);
-
-  const toggleLogedIn = () => {
-    setIsLogedIn(!isLogedIn);
-  };
-
   return (
     <div className="App">
-      <h1>{isLogedIn ? 'Welcome back!' : 'Please log in'}</h1>
-      <button onClick={toggleLogedIn}>{isLogedIn ? 'Log out' : 'Log in'}</button>
+      <Greeting name="John" />
+      <Greeting name="Alice" />
     </div>
   );
-  }
+}
 
-  export default App;
+export default App;
