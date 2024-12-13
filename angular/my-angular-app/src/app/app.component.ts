@@ -14,6 +14,10 @@ import { Component } from "@angular/core";
   standalone: true,
   imports: [CommonModule, FormsModule]
 })
+// export class AppComponent {
+//   userInput: string = '';
+// }
+
 export class AppComponent {
-  userInput: string = '';
+  items: string[] = ['Apple', 'Banana', 'Cherry'];
 }

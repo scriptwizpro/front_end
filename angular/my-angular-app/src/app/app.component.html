@@ -1,5 +1,10 @@
 <!-- app.component.html -->
 
 <!-- Two-Way Data Binding -->
- <input type="text" [(ngModel)]="userInput" placeholder="Type something...">
- <p>You typed: {{ userInput }}</p>
+ <!-- <input type="text" [(ngModel)]="userInput" placeholder="Type something...">
+ <p>You typed: {{ userInput }}</p> -->
+
+<!-- Display a List -->
+<ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+</ul>
