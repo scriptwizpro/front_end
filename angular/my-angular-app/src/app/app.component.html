@@ -1,10 +1,15 @@
 <!-- app.component.html -->
 
-<!-- Two-Way Data Binding -->
+<!-- Exercise 1: Two-Way Data Binding -->
  <!-- <input type="text" [(ngModel)]="userInput" placeholder="Type something...">
  <p>You typed: {{ userInput }}</p> -->
 
-<!-- Display a List -->
-<ul>
+<!-- Exercise 2: Display a List -->
+<!-- <ul>
     <li *ngFor="let item of items">{{ item }}</li>
-</ul>
+</ul> -->
+
+<!-- Exercise 3: Conditional Rendering -->
+<button (click)="isLoggedIn = !isLoggedIn">Toggle Login</button>
+<p *ngIf="isLoggedIn">Welcome, User!</p>
+<p *ngIf="!isLoggedIn">Please log in.</p>

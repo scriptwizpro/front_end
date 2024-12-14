@@ -18,6 +18,16 @@ import { Component } from "@angular/core";
 //   userInput: string = '';
 // }
 
+
+// Exercise 2: Display a List
+// Create an Angular component to display a list of items.
+// export class AppComponent {
+//   items: string[] = ['Apple', 'Banana', 'Cherry'];
+// }
+
+
+// Exercise 3: Conditional Rendering
+// Use *ngIf to conditionally display content based on a variable.
 export class AppComponent {
-  items: string[] = ['Apple', 'Banana', 'Cherry'];
+  isLoggedIn: boolean = false;
 }
