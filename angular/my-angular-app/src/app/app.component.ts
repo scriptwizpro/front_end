@@ -28,6 +28,16 @@ import { Component } from "@angular/core";
 
 // Exercise 3: Conditional Rendering
 // Use *ngIf to conditionally display content based on a variable.
+// export class AppComponent {
+//   isLoggedIn: boolean = false;
+// }
+
+// Exercise 4: Event Binding
+// Implement a button click event to update a counter.
 export class AppComponent {
-  isLoggedIn: boolean = false;
+  counter: number = 0;
+
+  increment() {
+    this.counter++;
+  }
 }
