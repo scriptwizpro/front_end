@@ -6,13 +6,14 @@
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Component } from "@angular/core";
+import { ParentComponent } from "./parent/parent.component";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
   standalone: true,
-  imports: [CommonModule, FormsModule]
+  imports: [CommonModule, FormsModule, ParentComponent]
 })
 // export class AppComponent {
 //   userInput: string = '';
