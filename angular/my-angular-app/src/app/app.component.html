@@ -15,8 +15,23 @@
 <p *ngIf="!isLoggedIn">Please log in.</p> -->
 
 <!-- Exercise 4: Event Binding -->
- <button (click)="increment()">Click me</button>
- <p>Button clicked {{ counter }} times</p>
+ <!-- <button (click)="increment()">Click me</button>
+ <p>Button clicked {{ counter }} times</p> -->
+
+
+<!-- Exercise 7: Reactive Forms -->
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <label>
+        Name:
+        <input formControlName="name">
+    </label>
+    <label>
+        Email:
+        <input formControlName="email">
+    </label>
+    <button type="submit">Submit</button>
+</form>
+
 
  <app-parent></app-parent>
 
