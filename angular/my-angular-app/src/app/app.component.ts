@@ -10,15 +10,16 @@ import { ParentComponent } from "./parent/parent.component";
 import { FirstComponent } from "./first/first.component";
 import { SecondComponent } from "./second/second.component";
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
   standalone: true,
-  imports: [CommonModule, FormsModule, ParentComponent, SecondComponent, FirstComponent, ReactiveFormsModule]
+  imports: [CommonModule, FormsModule, ParentComponent, SecondComponent, FirstComponent, ReactiveFormsModule, HighlightDirective]
 })
-// export class AppComponent {
+// export class AppComponent {s
 //   userInput: string = '';
 // }
 
