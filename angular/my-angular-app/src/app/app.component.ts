@@ -48,16 +48,22 @@ import { HighlightDirective } from './highlight.directive';
 // }
 
 //Exercise 7: Reactive Forms
-export class AppComponent {
-  myForm: FormGroup;
+// export class AppComponent {
+//   myForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
-    this.myForm = this.fb.group({
-      name: [''],
-      email: [''],
-    });
-  }
-  submitForm() {
-    console.log(this.myForm.value);
-  }
+//   constructor(private fb: FormBuilder) {
+//     this.myForm = this.fb.group({
+//       name: [''],
+//       email: [''],
+//     });
+//   }
+//   submitForm() {
+//     console.log(this.myForm.value);
+//   }
+// }
+
+// Exercise 9: Pipes
+export class AppComponent {
+  today: number = Date.now();
+  price: number = 12345.67;
 }
