@@ -11,17 +11,22 @@ import { FirstComponent } from "./first/first.component";
 import { SecondComponent } from "./second/second.component";
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
   standalone: true,
-  imports: [CommonModule, FormsModule, ParentComponent, SecondComponent, FirstComponent, ReactiveFormsModule, HighlightDirective]
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule]
+  // imports: [CommonModule, FormsModule, ParentComponent, SecondComponent, FirstComponent, ReactiveFormsModule, HighlightDirective]
 })
-// export class AppComponent {s
-//   userInput: string = '';
-// }
+export class AppComponent {
+  userInput: string = '';
+}
 
 
 // Exercise 2: Display a List
@@ -63,7 +68,7 @@ import { HighlightDirective } from './highlight.directive';
 // }
 
 // Exercise 9: Pipes
-export class AppComponent {
-  today: number = Date.now();
-  price: number = 12345.67;
-}
+// export class AppComponent {
+//   today: number = Date.now();
+//   price: number = 12345.67;
+// }
